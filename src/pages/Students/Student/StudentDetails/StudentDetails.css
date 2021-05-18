@@ -1,0 +1,65 @@
+.student-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10% 10%;
+  border: 1px solid #e5e5ee;
+  border-radius: 10px;
+}
+
+.student-card .student-photo {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .student-card .student-photo p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+} */
+
+.student-card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease;
+}
+
+.student-card button:hover {
+  transform: scale(1.2);
+}
+.student-card button span {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.student-credentials p {
+  margin: 3px auto;
+}
+
+.student-credentials .student-name {
+  line-height: 1.15;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.student-credentials .student-marks {
+  color: #353535;
+  margin: 1rem;
+}

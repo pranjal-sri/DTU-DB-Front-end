@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Fragment, useState } from "react";
+import Header from "./Components/Layout/Header/Header";
+import Categories from "./Components/Meals/Categories";
+import CartItems from "./Components/Cart/CartItem/CartItems";
+import { Route } from "react-router-dom";
+import Students from "./pages/Students/Students";
+import Departments from "./pages/Departments/Departments";
+import Subjects from "./pages/Subjects/Subjects";
 
 function App() {
+  const [isCartVisible, setIsCartVisible] = useState(false);
+
+  function showCartHandler() {
+    setIsCartVisible(true);
+  }
+
+  function hideCartHandler() {
+    setIsCartVisible(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header onShowCart={showCartHandler} />
+      <main>
+        <Route path="/" exact>
+          <Categories />
+        </Route>
+        <Route path="/students">
+          <Students />
+        </Route>
+        <Route path="/departments">
+          <Departments />
+        </Route>
+        <Route path="/subjects">
+          <Subjects />
+        </Route>
+      </main>
+      {isCartVisible && <CartItems onHideCart={hideCartHandler} />}
+    </Fragment>
   );
 }
 

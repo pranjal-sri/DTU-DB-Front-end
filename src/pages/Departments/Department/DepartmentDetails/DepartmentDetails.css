@@ -1,0 +1,71 @@
+.dept-students {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dept-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 15px;
+  width: 15%;
+  border: 1px solid #e5e5ee;
+  border-radius: 10px;
+}
+
+.dept-card .dept-photo {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .dept-card .dept-photo p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  } */
+
+.dept-add {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  bottom: -20px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease;
+}
+
+.dept-add:hover {
+  transform: scale(1.2);
+}
+.dept-add span {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.dept-credentials p {
+  margin: 3px auto;
+}
+
+.dept-credentials .dept-name {
+  line-height: 1.15;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.dept-credentials .dept-marks {
+  color: #353535;
+  margin: 1rem;
+}
