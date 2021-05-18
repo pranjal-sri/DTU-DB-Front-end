@@ -1,27 +1,16 @@
 import "./App.css";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import Header from "./Components/Layout/Header/Header";
 import Categories from "./Components/Meals/Categories";
-import CartItems from "./Components/Cart/CartItem/CartItems";
 import { Route } from "react-router-dom";
 import Students from "./pages/Students/Students";
 import Departments from "./pages/Departments/Departments";
 import Subjects from "./pages/Subjects/Subjects";
 
 function App() {
-  const [isCartVisible, setIsCartVisible] = useState(false);
-
-  function showCartHandler() {
-    setIsCartVisible(true);
-  }
-
-  function hideCartHandler() {
-    setIsCartVisible(false);
-  }
-
   return (
     <Fragment>
-      <Header onShowCart={showCartHandler} />
+      <Header />
       <main>
         <Route path="/" exact>
           <Categories />
@@ -36,7 +25,6 @@ function App() {
           <Subjects />
         </Route>
       </main>
-      {isCartVisible && <CartItems onHideCart={hideCartHandler} />}
     </Fragment>
   );
 }

@@ -10,15 +10,14 @@ const CATEGORIES_LIST = [
     name: "Students",
     path: "/students",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "View the students and their cumulative marks according to their roll numbers.",
   },
   {
     id: "cat_2",
     img: deptImg,
     name: "Departments",
     path: "/departments",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    description: "View students of a department in the order of ranks.",
   },
   {
     id: "cat_3",
@@ -26,7 +25,7 @@ const CATEGORIES_LIST = [
     name: "Subjects",
     path: "/subjects",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "View the Subjects and the average and mean performance in them according to their codes.",
   },
 ];
 
