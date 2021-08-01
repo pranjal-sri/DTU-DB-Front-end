@@ -9,22 +9,24 @@ The website allows you to view the result of a specific student, a subject or a 
 <img src = 'assets/FrontEnd.jpg' height = "80%">
 
 ## Students
-Students can view their result by entering their roll number.
-In the project directory, you can run:  
+Students can view their result by entering their roll number.  
+
 <img src = 'assets/Subject.jpg' height = "80%">
 
 
 ## Subjects
-People can also view subject specific statistics and reults.
+People can also view subject specific statistics and reults.  
+
 <img src = 'assets/sub.jpg' height = "80%">
 
 ## Departments
-Results can also be viewed department wise with students arranged in their department ranks.
+Results can also be viewed department wise with students arranged in their department ranks.  
 
 <img src = 'assets/dep.jpg' height = '80%'>
 
 ----
-## To run the app:
+## Run the app
+In the project directory, you can run:  
 ### `npm start`
 
 Runs the app in the development mode.\
